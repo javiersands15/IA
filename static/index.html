@@ -3,36 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IA Assistant: asistente inteligente para tus ideas y proyectos." />
     <title>IA Assistant</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
     <div class="app-shell">
       <header class="topbar">
         <div class="brand">
           <div class="logo">AI</div>
-          <div>
-            <h1>IA Assistant</h1>
-            <p>Asistente inteligente</p>
-          </div>
+          <div><h1>IA Assistant</h1><p>Tu asistente inteligente</p></div>
         </div>
-        <span class="status" id="statusBadge">Demo mode</span>
+        <span class="status" id="statusBadge">Modo demo</span>
       </header>
-
       <main class="chat-panel">
-        <div id="messages" class="messages">
-          <div class="message bot">
-            <div class="bubble">¡Hola! Soy tu asistente IA. ¿En qué puedo ayudarte hoy?</div>
-          </div>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="message bot"><div class="bubble">¡Hola! Soy tu asistente IA. Escribe un mensaje para comenzar.</div></div>
         </div>
-
         <form id="chatForm" class="composer">
-          <textarea id="messageInput" rows="1" placeholder="Escribe tu mensaje..." required></textarea>
+          <textarea id="messageInput" rows="1" placeholder="Escribe tu mensaje… (Enter para enviar)" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </main>
     </div>
-
-    <script src="/script.js"></script>
+    <script src="/static/script.js"></script>
   </body>
 </html>
